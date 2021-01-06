@@ -1,10 +1,11 @@
 @charset "utf-8";
 
 // Import a Google Font
-@import url("https://fonts.googleapis.com/css?family=Nunito:400,700");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
 
 // Set your brand colors
 $purple: #7a39f2;
+$darknavy: #0c0824;
 $dark: #6a696d;
 $light: #29e8ef;
 $blue: #29e8ef;
@@ -15,7 +16,7 @@ $yellow: #e1c033;
 // $beige-lighter: #eff0eb;
 
 // Update Bulma's global variables
-$family-sans-serif: "Nunito", sans-serif;
+$family-sans-serif: 'Poppins', sans-serif;
 $grey-dark: $dark;
 $grey-light: $light;
 $primary: $purple;
