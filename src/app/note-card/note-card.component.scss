@@ -8,22 +8,40 @@
   margin: 1rem;
   padding: 1.5rem;
   cursor: pointer;
-  transition: .3s ease;;
+  transition: .3s ease;
+  overflow: hidden;
 
   &:hover {
     box-shadow: 0 0px 4px 4px rgba(black, 0.1);
+    
+    .delete-btn {
+      opacity: 1;
+      transform: initial;
+    }
   }
 
   .note-card-title {
-    color: $blue;
+    color: darken($blue, 10%);
     font-size: 1.4rem;
     margin-bottom: 1rem;
   }
 
   .note-card-body {
-    color: $dark;
+    position: relative;
+    color: darken($dark, 5%);
     font-size: 1rem;
     line-height: 1.5;
+    max-height: 80px;
+    overflow: hidden;
+
+    .fade-out-truncation {
+      position: absolute;
+      pointer-events: none;
+      bottom: 0;
+      height: 50%;
+      width: 100%;
+      background-image: linear-gradient(transparent, rgba(white, .8) 50%, white);
+    }
   }
 }
 
@@ -36,5 +54,18 @@
   border: none;
   border-radius: 50%;
   color: white;
-  background-color: rgb(230, 52, 52);
+  background-color: #f06565;
+  opacity: 0;
+  transform: scale(0.5);
+  transition: .3s ease;
+  
+  cursor: pointer;
+
+  &:hover {
+    background-color: darken(#f06565, 20%);
+  }
+
+  &:active {
+    background-color: darken(#f06565, 30%);
+  }
 }
