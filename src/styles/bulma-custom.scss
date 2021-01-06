@@ -10,6 +10,7 @@ $dark: #6a696d;
 $light: #29e8ef;
 $blue: #29e8ef;
 $white:#fefefe;
+$lightgrey: #f1f1f1;
 $yellow: #e1c033;
 // $pink: #fa7c91;
 // $brown: #757763;
@@ -25,7 +26,7 @@ $widescreen-enabled: false;
 $fullhd-enabled: false;
 
 // Update some of Bulma's component variables
-$body-background-color: $white;
+$body-background-color: $lightgrey;
 $control-border-width: 2px;
 $input-border-color: transparent;
 $input-shadow: none;
